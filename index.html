@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Memory Light Game</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<main class="game-container">
+			<div class="game-board" id="game-board">
+				<button class="game-pad" id="pad-1" data-id="1"></button>
+				<button class="game-pad" id="pad-2" data-id="2"></button>
+				<button class="game-pad" id="pad-3" data-id="3"></button>
+				<button class="game-pad" id="pad-4" data-id="4"></button>
+			</div>
+
+			<div class="controls">
+				<h1 class="title">Memory Light Game</h1>
+				<p class="status" id="status-display">Press Start to Play!</p>
+				<div class="count-display" id="count-display">--</div>
+
+				<button class="btn" id="start-btn">Start</button>
+
+				<div class="strict-toggle-container">
+					<label class="toggle-switch" for="strict-mode">
+						<input type="checkbox" id="strict-mode" />
+						<span class="slider"></span>
+					</label>
+					<label for="strict-mode" class="toggle-label">Strict Mode</label>
+				</div>
+			</div>
+		</main>
+
+		<audio
+			id="sound-1"
+			src="https://cdn.freecodecamp.org/curriculum/take-home-projects/memory-light-game/sound-1.mp3"
+			preload="auto"
+		></audio>
+		<audio
+			id="sound-2"
+			src="https://cdn.freecodecamp.org/curriculum/take-home-projects/memory-light-game/sound-2.mp3"
+			preload="auto"
+		></audio>
+		<audio
+			id="sound-3"
+			src="https://cdn.freecodecamp.org/curriculum/take-home-projects/memory-light-game/sound-3.mp3"
+			preload="auto"
+		></audio>
+		<audio
+			id="sound-4"
+			src="https://cdn.freecodecamp.org/curriculum/take-home-projects/memory-light-game/sound-4.mp3"
+			preload="auto"
+		></audio>
+		<audio
+			id="sound-error"
+			src="https://cdn.freesound.org/previews/142/142608_1840739-lq.mp3"
+			preload="auto"
+		></audio>
+	</body>
+</html>
